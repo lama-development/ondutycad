@@ -1,14 +1,328 @@
 <div class="flex-1 p-6 sm:ml-64">
   <div class="space-y-6">
+    <!-- Header -->
     <div class="border border-gray-700 bg-gray-800 p-6 text-sm">
       <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
         <div>
-          <h1 class="mb-2 text-3xl font-bold text-white">DASHBOARD</h1>
-          <p class="text-gray-400">WELCOME BACK, DAVE LEMARK</p>
+          <h1 class="mb-2 text-3xl font-bold text-white">Dashboard</h1>
+          <p class="text-gray-400">Welcome back, DAVE LEMARK</p>
         </div>
         <div class="mt-4 text-right lg:mt-0">
           <div id="current-date" class="text-lg font-semibold text-white"></div>
           <div id="current-time" class="text-2xl font-bold text-blue-400"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Statistics Cards -->
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <!-- Active Calls -->
+      <div class="border border-gray-700 bg-gray-800 p-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="text-sm font-medium text-gray-400">Active Calls</p>
+            <p class="mt-2 text-3xl font-bold text-white">12</p>
+          </div>
+          <div class="rounded-full bg-blue-900 p-3">
+            <svg class="h-8 w-8 text-blue-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+          </div>
+        </div>
+        <div class="mt-4 flex items-center text-sm">
+          <span class="text-green-400">↑ 2</span>
+          <span class="ml-2 text-gray-400">from last hour</span>
+        </div>
+      </div>
+
+      <!-- Units on Duty -->
+      <div class="border border-gray-700 bg-gray-800 p-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="text-sm font-medium text-gray-400">Units on Duty</p>
+            <p class="mt-2 text-3xl font-bold text-white">24</p>
+          </div>
+          <div class="rounded-full bg-green-900 p-3">
+            <svg class="h-8 w-8 text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"></path></svg>
+          </div>
+        </div>
+        <div class="mt-4 flex items-center text-sm">
+          <span class="text-gray-400">18 Available, 6 Busy</span>
+        </div>
+      </div>
+
+      <!-- Priority Calls -->
+      <div class="border border-gray-700 bg-gray-800 p-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="text-sm font-medium text-gray-400">Priority Calls</p>
+            <p class="mt-2 text-3xl font-bold text-white">3</p>
+          </div>
+          <div class="rounded-full bg-red-900 p-3">
+            <svg class="h-8 w-8 text-red-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+          </div>
+        </div>
+        <div class="mt-4 flex items-center text-sm">
+          <span class="text-red-400">Requires Immediate Attention</span>
+        </div>
+      </div>
+
+      <!-- Reports Filed -->
+      <div class="border border-gray-700 bg-gray-800 p-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="text-sm font-medium text-gray-400">Reports Today</p>
+            <p class="mt-2 text-3xl font-bold text-white">47</p>
+          </div>
+          <div class="rounded-full bg-purple-900 p-3">
+            <svg class="h-8 w-8 text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"></path></svg>
+          </div>
+        </div>
+        <div class="mt-4 flex items-center text-sm">
+          <span class="text-green-400">↑ 12%</span>
+          <span class="ml-2 text-gray-400">vs yesterday</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Active Calls & Quick Actions -->
+    <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
+      <!-- Active Calls List -->
+      <div class="border border-gray-700 bg-gray-800 p-6 lg:col-span-2">
+        <div class="mb-4 flex items-center justify-between">
+          <h2 class="text-xl font-bold text-white">Active Calls</h2>
+          <a href="#" class="text-sm text-blue-400 hover:text-blue-300">View All →</a>
+        </div>
+        <div class="space-y-3">
+          <!-- Call Item 1 -->
+          <div class="border-l-4 border-red-500 bg-gray-900 p-4">
+            <div class="flex items-start justify-between">
+              <div class="flex-1">
+                <div class="flex items-center gap-2">
+                  <span class="rounded bg-red-600 px-2 py-1 text-xs font-bold text-white">CODE 3</span>
+                  <span class="text-sm font-semibold text-white">Armed Robbery in Progress</span>
+                </div>
+                <p class="mt-2 text-sm text-gray-400">Location: 1247 Main Street</p>
+                <p class="mt-1 text-xs text-gray-500">Dispatched: 3 min ago • Units: 1-ADAM-12, 1-ADAM-15</p>
+              </div>
+              <span class="rounded-full bg-red-900 px-3 py-1 text-xs font-medium text-red-400">PRIORITY</span>
+            </div>
+          </div>
+
+          <!-- Call Item 2 -->
+          <div class="border-l-4 border-yellow-500 bg-gray-900 p-4">
+            <div class="flex items-start justify-between">
+              <div class="flex-1">
+                <div class="flex items-center gap-2">
+                  <span class="rounded bg-yellow-600 px-2 py-1 text-xs font-bold text-white">CODE 2</span>
+                  <span class="text-sm font-semibold text-white">Traffic Accident - Injury</span>
+                </div>
+                <p class="mt-2 text-sm text-gray-400">Location: Highway 101 & Oak Avenue</p>
+                <p class="mt-1 text-xs text-gray-500">Dispatched: 8 min ago • Units: 1-CHARLIE-11, EMS-4</p>
+              </div>
+              <span class="rounded-full bg-yellow-900 px-3 py-1 text-xs font-medium text-yellow-400">URGENT</span>
+            </div>
+          </div>
+
+          <!-- Call Item 3 -->
+          <div class="border-l-4 border-blue-500 bg-gray-900 p-4">
+            <div class="flex items-start justify-between">
+              <div class="flex-1">
+                <div class="flex items-center gap-2">
+                  <span class="rounded bg-blue-600 px-2 py-1 text-xs font-bold text-white">CODE 2</span>
+                  <span class="text-sm font-semibold text-white">Suspicious Person</span>
+                </div>
+                <p class="mt-2 text-sm text-gray-400">Location: Central Park - East Entrance</p>
+                <p class="mt-1 text-xs text-gray-500">Dispatched: 15 min ago • Units: 1-DAVID-7</p>
+              </div>
+              <span class="rounded-full bg-blue-900 px-3 py-1 text-xs font-medium text-blue-400">ROUTINE</span>
+            </div>
+          </div>
+
+          <!-- Call Item 4 -->
+          <div class="border-l-4 border-green-500 bg-gray-900 p-4">
+            <div class="flex items-start justify-between">
+              <div class="flex-1">
+                <div class="flex items-center gap-2">
+                  <span class="rounded bg-green-600 px-2 py-1 text-xs font-bold text-white">CODE 1</span>
+                  <span class="text-sm font-semibold text-white">Welfare Check</span>
+                </div>
+                <p class="mt-2 text-sm text-gray-400">Location: 892 Elm Street, Apt 4B</p>
+                <p class="mt-1 text-xs text-gray-500">Dispatched: 22 min ago • Units: 1-MARY-3</p>
+              </div>
+              <span class="rounded-full bg-green-900 px-3 py-1 text-xs font-medium text-green-400">LOW</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Actions -->
+      <div class="border border-gray-700 bg-gray-800 p-6">
+        <h2 class="mb-4 text-xl font-bold text-white">Quick Actions</h2>
+        <div class="space-y-3">
+          <button class="w-full border border-blue-600 bg-blue-900 px-4 py-3 text-left text-white transition hover:bg-blue-800">
+            <div class="flex items-center">
+              <svg class="mr-3 h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+              <span class="font-medium">Create New Call</span>
+            </div>
+          </button>
+
+          <button class="w-full border border-gray-600 bg-gray-700 px-4 py-3 text-left text-white transition hover:bg-gray-600">
+            <div class="flex items-center">
+              <svg class="mr-3 h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+              <span class="font-medium">Search Identity</span>
+            </div>
+          </button>
+
+          <button class="w-full border border-gray-600 bg-gray-700 px-4 py-3 text-left text-white transition hover:bg-gray-600">
+            <div class="flex items-center">
+              <svg class="mr-3 h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path><path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z"></path></svg>
+              <span class="font-medium">License Plate Lookup</span>
+            </div>
+          </button>
+
+          <button class="w-full border border-gray-600 bg-gray-700 px-4 py-3 text-left text-white transition hover:bg-gray-600">
+            <div class="flex items-center">
+              <svg class="mr-3 h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"></path></svg>
+              <span class="font-medium">File Report</span>
+            </div>
+          </button>
+
+          <button class="w-full border border-gray-600 bg-gray-700 px-4 py-3 text-left text-white transition hover:bg-gray-600">
+            <div class="flex items-center">
+              <svg class="mr-3 h-5 w-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg>
+              <span class="font-medium">View Shift Log</span>
+            </div>
+          </button>
+        </div>
+
+        <!-- Status Indicator -->
+        <div class="mt-6 border-t border-gray-700 pt-4">
+          <div class="flex items-center justify-between">
+            <span class="text-sm text-gray-400">Your Status</span>
+            <div class="flex items-center">
+              <span class="mr-2 h-3 w-3 animate-pulse rounded-full bg-green-500"></span>
+              <span class="text-sm font-medium text-green-400">ON DUTY</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recent Activity & Unit Status -->
+    <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+      <!-- Recent Activity -->
+      <div class="border border-gray-700 bg-gray-800 p-6">
+        <h2 class="mb-4 text-xl font-bold text-white">Recent Activity</h2>
+        <div class="space-y-4">
+          <div class="flex items-start gap-3">
+            <div class="rounded-full bg-green-900 p-2">
+              <svg class="h-4 w-4 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+            </div>
+            <div class="flex-1">
+              <p class="text-sm text-white">Report #2024-1147 filed by <span class="font-medium">1-ADAM-12</span></p>
+              <p class="text-xs text-gray-500">2 minutes ago</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <div class="rounded-full bg-blue-900 p-2">
+              <svg class="h-4 w-4 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path></svg>
+            </div>
+            <div class="flex-1">
+              <p class="text-sm text-white">New warrant issued for John Doe - #W-2024-0892</p>
+              <p class="text-xs text-gray-500">5 minutes ago</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <div class="rounded-full bg-purple-900 p-2">
+              <svg class="h-4 w-4 text-purple-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"></path></svg>
+            </div>
+            <div class="flex-1">
+              <p class="text-sm text-white"><span class="font-medium">Officer J. Smith</span> logged on duty</p>
+              <p class="text-xs text-gray-500">12 minutes ago</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <div class="rounded-full bg-yellow-900 p-2">
+              <svg class="h-4 w-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+            </div>
+            <div class="flex-1">
+              <p class="text-sm text-white">BOLO issued: Stolen vehicle - Black SUV, Plate: ABC1234</p>
+              <p class="text-xs text-gray-500">18 minutes ago</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <div class="rounded-full bg-red-900 p-2">
+              <svg class="h-4 w-4 text-red-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>
+            </div>
+            <div class="flex-1">
+              <p class="text-sm text-white">Call cancelled: False alarm at 456 Maple Drive</p>
+              <p class="text-xs text-gray-500">25 minutes ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Units Status -->
+      <div class="border border-gray-700 bg-gray-800 p-6">
+        <h2 class="mb-4 text-xl font-bold text-white">Unit Status</h2>
+        <div class="space-y-3">
+          <!-- Available Units -->
+          <div>
+            <div class="mb-2 flex items-center justify-between">
+              <span class="text-sm font-medium text-gray-400">Available (18)</span>
+              <span class="rounded bg-green-900 px-2 py-1 text-xs font-medium text-green-400">READY</span>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="rounded border border-green-700 bg-green-900 px-3 py-1 text-xs font-medium text-green-300">1-ADAM-10</span>
+              <span class="rounded border border-green-700 bg-green-900 px-3 py-1 text-xs font-medium text-green-300">1-ADAM-14</span>
+              <span class="rounded border border-green-700 bg-green-900 px-3 py-1 text-xs font-medium text-green-300">1-CHARLIE-9</span>
+              <span class="rounded border border-green-700 bg-green-900 px-3 py-1 text-xs font-medium text-green-300">1-DAVID-2</span>
+              <span class="rounded border border-green-700 bg-green-900 px-3 py-1 text-xs font-medium text-green-300">1-MARY-5</span>
+              <span class="rounded border border-green-700 bg-green-900 px-3 py-1 text-xs font-medium text-green-300">+13 more</span>
+            </div>
+          </div>
+
+          <!-- Busy Units -->
+          <div class="border-t border-gray-700 pt-3">
+            <div class="mb-2 flex items-center justify-between">
+              <span class="text-sm font-medium text-gray-400">Busy (6)</span>
+              <span class="rounded bg-yellow-900 px-2 py-1 text-xs font-medium text-yellow-400">ENGAGED</span>
+            </div>
+            <div class="space-y-2">
+              <div class="flex items-center justify-between rounded border border-yellow-700 bg-yellow-900 px-3 py-2">
+                <span class="text-xs font-medium text-yellow-300">1-ADAM-12</span>
+                <span class="text-xs text-yellow-400">Armed Robbery</span>
+              </div>
+              <div class="flex items-center justify-between rounded border border-yellow-700 bg-yellow-900 px-3 py-2">
+                <span class="text-xs font-medium text-yellow-300">1-ADAM-15</span>
+                <span class="text-xs text-yellow-400">Armed Robbery</span>
+              </div>
+              <div class="flex items-center justify-between rounded border border-yellow-700 bg-yellow-900 px-3 py-2">
+                <span class="text-xs font-medium text-yellow-300">1-CHARLIE-11</span>
+                <span class="text-xs text-yellow-400">Traffic Accident</span>
+              </div>
+              <div class="flex items-center justify-between rounded border border-yellow-700 bg-yellow-900 px-3 py-2">
+                <span class="text-xs font-medium text-yellow-300">1-DAVID-7</span>
+                <span class="text-xs text-yellow-400">Suspicious Person</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Off Duty Units -->
+          <div class="border-t border-gray-700 pt-3">
+            <div class="mb-2 flex items-center justify-between">
+              <span class="text-sm font-medium text-gray-400">Off Duty</span>
+              <span class="rounded bg-gray-700 px-2 py-1 text-xs font-medium text-gray-400">OFFLINE</span>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="rounded border border-gray-600 bg-gray-700 px-3 py-1 text-xs font-medium text-gray-400">1-ADAM-8</span>
+              <span class="rounded border border-gray-600 bg-gray-700 px-3 py-1 text-xs font-medium text-gray-400">1-CHARLIE-3</span>
+              <span class="rounded border border-gray-600 bg-gray-700 px-3 py-1 text-xs font-medium text-gray-400">1-DAVID-1</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
